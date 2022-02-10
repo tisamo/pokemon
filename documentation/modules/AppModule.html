@@ -186,13 +186,11 @@
     <div class="tab-pane fade  tab-source-code" id="c-source">
         <pre class="line-numbers compodoc-sourcecode"><code class="language-typescript">import { NgModule } from &#x27;@angular/core&#x27;;
 import { BrowserModule } from &#x27;@angular/platform-browser&#x27;;
-
 import { AppRoutingModule } from &#x27;./app-routing.module&#x27;;
 import { AppComponent } from &#x27;./app.component&#x27;;
 import { BrowserAnimationsModule } from &#x27;@angular/platform-browser/animations&#x27;;
-import { PokemonCenterComponent } from &#x27;./pages/pokemon-center/pokemon-center.component&#x27;;
 import {HttpClientModule} from &#x27;@angular/common/http&#x27;;
-import { SelectedPokemonComponent } from &#x27;./pages/selected-pokemon/selected-pokemon.component&#x27;;
+import {PokemonService} from &#x27;./services/pokemon.service&#x27;;
 
 @NgModule({
   declarations: [

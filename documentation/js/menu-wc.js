@@ -54,13 +54,13 @@ customElements.define('compodoc-menu', class extends HTMLElement {
                                 <a href="modules/AppModule.html" data-type="entity-link" >AppModule</a>
                                     <li class="chapter inner">
                                         <div class="simple menu-toggler" data-toggle="collapse" ${ isNormalMode ?
-                                            'data-target="#components-links-module-AppModule-38014daa51ee36f05abc6d1cac7c4e12f6c33bd51c2136db3f2edb53ed49f639b87b2603576ef5dd9eafacbb272aaa34957acfd41c4f0d0c3e19d4ab459fee14"' : 'data-target="#xs-components-links-module-AppModule-38014daa51ee36f05abc6d1cac7c4e12f6c33bd51c2136db3f2edb53ed49f639b87b2603576ef5dd9eafacbb272aaa34957acfd41c4f0d0c3e19d4ab459fee14"' }>
+                                            'data-target="#components-links-module-AppModule-f69071263183025a5189093df728076d671277b4530b7ff71c8b32598743eda49492b18587bc5952278adfe1dc6de7ab7387c99f696ab748dcdec852231fe3cc"' : 'data-target="#xs-components-links-module-AppModule-f69071263183025a5189093df728076d671277b4530b7ff71c8b32598743eda49492b18587bc5952278adfe1dc6de7ab7387c99f696ab748dcdec852231fe3cc"' }>
                                             <span class="icon ion-md-cog"></span>
                                             <span>Components</span>
                                             <span class="icon ion-ios-arrow-down"></span>
                                         </div>
-                                        <ul class="links collapse" ${ isNormalMode ? 'id="components-links-module-AppModule-38014daa51ee36f05abc6d1cac7c4e12f6c33bd51c2136db3f2edb53ed49f639b87b2603576ef5dd9eafacbb272aaa34957acfd41c4f0d0c3e19d4ab459fee14"' :
-                                            'id="xs-components-links-module-AppModule-38014daa51ee36f05abc6d1cac7c4e12f6c33bd51c2136db3f2edb53ed49f639b87b2603576ef5dd9eafacbb272aaa34957acfd41c4f0d0c3e19d4ab459fee14"' }>
+                                        <ul class="links collapse" ${ isNormalMode ? 'id="components-links-module-AppModule-f69071263183025a5189093df728076d671277b4530b7ff71c8b32598743eda49492b18587bc5952278adfe1dc6de7ab7387c99f696ab748dcdec852231fe3cc"' :
+                                            'id="xs-components-links-module-AppModule-f69071263183025a5189093df728076d671277b4530b7ff71c8b32598743eda49492b18587bc5952278adfe1dc6de7ab7387c99f696ab748dcdec852231fe3cc"' }>
                                             <li class="link">
                                                 <a href="components/AppComponent.html" data-type="entity-link" data-context="sub-entity" data-context-id="modules" >AppComponent</a>
                                             </li>
@@ -91,13 +91,13 @@ customElements.define('compodoc-menu', class extends HTMLElement {
                                 <a href="modules/SelectedPokemonModule.html" data-type="entity-link" >SelectedPokemonModule</a>
                                     <li class="chapter inner">
                                         <div class="simple menu-toggler" data-toggle="collapse" ${ isNormalMode ?
-                                            'data-target="#components-links-module-SelectedPokemonModule-dfc89d58365be45e23f382a9ee10a8be0a351e81b6421087fb1e514707181b52f9d69c767b50d93a69d5d492890eb379fbbdc42392ade274f6a5545db0295e1c"' : 'data-target="#xs-components-links-module-SelectedPokemonModule-dfc89d58365be45e23f382a9ee10a8be0a351e81b6421087fb1e514707181b52f9d69c767b50d93a69d5d492890eb379fbbdc42392ade274f6a5545db0295e1c"' }>
+                                            'data-target="#components-links-module-SelectedPokemonModule-c2184e3019ed745553c3ec918d84fe3c83f7a1ca56f972f61838df01946bbcfda6d80975317faba364114f836326ae9e420da82d27461b8cabb71f0f01e942bb"' : 'data-target="#xs-components-links-module-SelectedPokemonModule-c2184e3019ed745553c3ec918d84fe3c83f7a1ca56f972f61838df01946bbcfda6d80975317faba364114f836326ae9e420da82d27461b8cabb71f0f01e942bb"' }>
                                             <span class="icon ion-md-cog"></span>
                                             <span>Components</span>
                                             <span class="icon ion-ios-arrow-down"></span>
                                         </div>
-                                        <ul class="links collapse" ${ isNormalMode ? 'id="components-links-module-SelectedPokemonModule-dfc89d58365be45e23f382a9ee10a8be0a351e81b6421087fb1e514707181b52f9d69c767b50d93a69d5d492890eb379fbbdc42392ade274f6a5545db0295e1c"' :
-                                            'id="xs-components-links-module-SelectedPokemonModule-dfc89d58365be45e23f382a9ee10a8be0a351e81b6421087fb1e514707181b52f9d69c767b50d93a69d5d492890eb379fbbdc42392ade274f6a5545db0295e1c"' }>
+                                        <ul class="links collapse" ${ isNormalMode ? 'id="components-links-module-SelectedPokemonModule-c2184e3019ed745553c3ec918d84fe3c83f7a1ca56f972f61838df01946bbcfda6d80975317faba364114f836326ae9e420da82d27461b8cabb71f0f01e942bb"' :
+                                            'id="xs-components-links-module-SelectedPokemonModule-c2184e3019ed745553c3ec918d84fe3c83f7a1ca56f972f61838df01946bbcfda6d80975317faba364114f836326ae9e420da82d27461b8cabb71f0f01e942bb"' }>
                                             <li class="link">
                                                 <a href="components/SelectedPokemonComponent.html" data-type="entity-link" data-context="sub-entity" data-context-id="modules" >SelectedPokemonComponent</a>
                                             </li>
