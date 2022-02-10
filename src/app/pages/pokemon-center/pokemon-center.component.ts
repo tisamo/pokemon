@@ -48,7 +48,13 @@ export class PokemonCenterComponent implements OnInit, OnDestroy {
       const pokemons: any = await this.pokeService.getTheFirstTwentyPokemons().toPromise();
       for (let p of pokemons.results) {
         const pokemon: any = await this.pokeService.getPokemonByUrl(p.url).toPromise();
-        const types = [];
+        const types = []
+        const abilites = [];
+        for (let a of pokemon.abilities){
+          if(!a.is_hidden){
+            abilites.push(a.ability.name);
+          }
+        }
         for (let t of pokemon.types) {
           types.push(t.type.name);
           if (!this.pokeService.pokeTypes.includes(t.type.name)) {
@@ -57,6 +63,9 @@ export class PokemonCenterComponent implements OnInit, OnDestroy {
         }
         this.pokeService.pokemons.push({
           name: p.name,
+          height: pokemon.height,
+          weight: pokemon.weight,
+          abilites,
           sprites: [
             pokemon.sprites.back_default,
             pokemon.sprites.back_shiny,

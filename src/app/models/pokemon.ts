@@ -4,4 +4,7 @@ export interface Pokemon{
   sprites: string[];
   selectedSpriteIndex: number;
   isCached: boolean;
+  height: number;
+  weight: number;
+  abilites: string[];
 }

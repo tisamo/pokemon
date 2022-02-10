@@ -3,22 +3,41 @@
   <div class="row h-100">
     <div class="col-4 h-100 poke-side">
       <div class="internal-container">
+        <div class="title">
+          Pokédex
+        </div>
         <div class="poke-screen">
           <div class="poke-filter"
                [style.backgroundColor]="'rgb(128,128,128,' + this.filterDepth+')'">
             <img [src]="selectedPokemon.sprites[this.selectedPokemon.selectedSpriteIndex]">
           </div>
         </div>
-        <div>{{selectedPokemon.name}}</div>
+        <div class="row desctiptions">
+          <div class="col-6">
+            <p>Pokemon name: {{selectedPokemon.name}}</p>
+            <p>Pokemon height: {{selectedPokemon.height}}</p>
+            <p>Pokemon weight: {{selectedPokemon.weight}}</p>
+          </div>
+          <div class="col-auto">
+            <p class="big">Abilities: </p>
+            <p *ngFor="let a of selectedPokemon.abilites">{{a}}</p>
+
+          </div>
+
+        </div>
       </div>
 
     </div>
     <div class="col-8 catch-container">
-      <div class="title" [ngSwitch]="selectedPokemon.isCached">
+      <div class="title"
+           [ngSwitch]="selectedPokemon.isCached">
         <p *ngSwitchCase="true">Kattins a labádra, hogy elengedd a pokemont!</p>
         <p *ngSwitchCase="false">Kattins a labdára, hogy elkapd a pokemont!</p>
       </div>
-      <div [@fade] *ngIf="!selectedPokemon.isCached" class="title">Wild Pokemon appears!</div>
+      <div [@fade]
+           *ngIf="!selectedPokemon.isCached"
+           class="title">Wild Pokemon appears!
+      </div>
       <img class="pokeball"
            src="assets/images/pokeball.png"
            (click)="tryToCatch()"
