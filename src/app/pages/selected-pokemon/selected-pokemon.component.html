@@ -1,0 +1,35 @@
+<div class="container h-100"
+     *ngIf="selectedPokemon">
+  <div class="row h-100">
+    <div class="col-4 h-100 poke-side">
+      <div class="internal-container">
+        <div class="poke-screen">
+          <div class="poke-filter"
+               [style.backgroundColor]="'rgb(128,128,128,' + this.filterDepth+')'">
+            <img [src]="selectedPokemon.sprites[this.selectedPokemon.selectedSpriteIndex]">
+          </div>
+        </div>
+        <div>{{selectedPokemon.name}}</div>
+      </div>
+
+    </div>
+    <div class="col-8 catch-container">
+      <div class="title" [ngSwitch]="selectedPokemon.isCached">
+        <p *ngSwitchCase="true">Kattins a labádra, hogy elengedd a pokemont!</p>
+        <p *ngSwitchCase="false">Kattins a labdára, hogy elkapd a pokemont!</p>
+      </div>
+      <div [@fade] *ngIf="!selectedPokemon.isCached" class="title">Wild Pokemon appears!</div>
+      <img class="pokeball"
+           src="assets/images/pokeball.png"
+           (click)="tryToCatch()"
+           [style.left]="left+'px'">
+      <img class="pokemon"
+           [@fade]
+           [src]="selectedPokemon.sprites[3]"
+           [style.top]="pokemonPosition+'px'"
+           *ngIf="!selectedPokemon.isCached">
+      <h1 class="back"
+          routerLink="../">Back</h1>
+    </div>
+  </div>
+</div>

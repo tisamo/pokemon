@@ -1,0 +1,50 @@
+<div class="container h-100 " *ngIf="localMons">
+<div class="row h-100">
+  <div class="col-lg-3 col-xs-12 h-100 poke-side">
+    <
+    <div class="title">
+      Poke Center
+    </div>
+    <div class="row">
+      <div class="col-10">
+        <input class="input" [formControl]="pokemonToFind">
+      </div>
+        <div class="col-2">
+          <input class="checkbox" type="checkbox" [(ngModel)]="onlyCatchedPokemons"
+                 (ngModelChange)="modelChanged()">
+        </div>
+
+    </div>
+
+    <div class="title title--little">
+      Pokemon types
+    </div>
+    <div class="row">
+      <div class="col-4 col-md-2 col-lg-6" *ngFor="let t of pokeService.pokeTypes">
+        <div class="category-tile" [ngClass]="{'category-tile--selected': selectedTiles.includes(t)}"
+             (click)="addCategoryToSearchingValuesThenFilterPokemons(t)">
+          {{t}}
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="col-lg-7 col-xs-12">
+    <div class="row">
+      <div class=" col-6 col-lg-2 col-md-3  " *ngFor="let p of localMons;let i = index"
+           (mouseenter)="onHoveringPokemonCard(i)"
+           (mouseleave)="mouseLeavePokemonCard()"
+            (click)="selectPokemon(i)"
+      >
+        <div class="card" [ngClass]="{'border-green': p.isCached}">
+          <div class="name">
+            {{p.name}}
+          </div>
+          <img [src]="p.sprites[p.selectedSpriteIndex]">
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="col-2 h-100 poke-side  d-none d-lg-block">
+  </div>
+</div>
+</div>
