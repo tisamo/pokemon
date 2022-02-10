@@ -1,6 +1,10 @@
 # Pokemon
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.1.2.
+Well i always wanted to make something like that. Ill implement a fighting system later if in the mood. 
+The main tasks gave a great backbone to this everevolving project. I spiced it up a little.
+
+## Install & Run
+Run npm i then you can run ng serve -o
 
 ## Development server
 
